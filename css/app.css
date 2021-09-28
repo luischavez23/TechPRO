@@ -87,7 +87,7 @@ img{
 .text-header h1{
     margin: 0;
 }
-.text-header h1{
+.green-gradient{
     color: transparent;
     background: linear-gradient(to right, var(--first) 0%, var(--second) 100%);
     -webkit-background-clip: text;
@@ -133,6 +133,7 @@ img{
 .icono img{
     width: 5rem;
 }
+
 /*  About us */
 .about-us{
     background-image: linear-gradient(to bottom, transparent 50%, var(--first) 0%), url(../img/imagen-mujer.jpg);
@@ -174,4 +175,49 @@ img{
 .text-about p{
     font-size: 2rem;
     line-height: 2;
+}
+
+/* Main */
+.models{
+    padding: 0 var(--between);
+}
+.model-list{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.model{
+    background-color: var(--gray);
+    color: var(--first);
+    padding-left: 4rem;
+    margin-bottom: 2rem;
+    min-height: 20rem; 
+    border-radius: 2rem;
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 15rem;
+}
+.model:first-of-type{
+    margin-bottom: 0;
+}
+.model h3{
+    font-size: 2.5rem;
+}
+.model .precio{
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 0;
+}
+.model-x{
+    background-image: url(../img/modelo-x.svg);
+}
+.model-y{
+    background-image: url(../img/modelo-y.svg);
+}
+.model-z{
+    background-image: url(../img/modelo-z.svg);
+    background-color: var(--first);
+    color: var(--white);
+}
+.model-z .precio{
+    font-size: 6rem;
 }
